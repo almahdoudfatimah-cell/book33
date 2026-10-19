@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Vintage Retro Motorcycle Club Community Logo.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Vintage Retro Motorcycle Club Community Logo-3.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Vintage Retro Motorcycle Club Community Logo-2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
