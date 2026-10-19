@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "27969170-15DB-409B-B310-DD41C7603068",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:fm.xcodeproj",
+      "identifier" : "4C8E8BC02F67D4D400202F95",
+      "name" : "fm"
+    },
+    "testInteropMode" : "complete"
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:fm.xcodeproj",
+        "identifier" : "4C8E8BDF2F67D4D700202F95",
+        "name" : "fmUITests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:fm.xcodeproj",
+        "identifier" : "4C8E8BD52F67D4D700202F95",
+        "name" : "fmTests"
+      }
+    }
+  ],
+  "version" : 1
+}

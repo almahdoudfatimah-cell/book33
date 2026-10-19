@@ -1,0 +1,198 @@
+═══════════════════════════════════════════════════════════════════
+     SCREENSHOT GUIDE: How to Exclude Files in Xcode
+═══════════════════════════════════════════════════════════════════
+
+This guide shows EXACTLY where to click in Xcode.
+
+═══════════════════════════════════════════════════════════════════
+SCREEN 1: Xcode Main Window
+═══════════════════════════════════════════════════════════════════
+
+┌─────────────────────────────────────────────────────────────────┐
+│ Xcode   File  Edit  View  Product        [▶ Run]  [◼ Stop]     │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│  ┌───────────┐  ┌──────────────────────┐  ┌─────────────────┐  │
+│  │ PROJECT   │  │  EDITOR              │  │  INSPECTOR      │  │
+│  │NAVIGATOR  │  │  AREA                │  │  PANEL          │  │
+│  │           │  │                      │  │                 │  │
+│  │  ↓        │  │   (Your code         │  │    ↓            │  │
+│  │ Click     │  │    shows here)       │  │  Click 📁       │  │
+│  │ file      │  │                      │  │  icon here      │  │
+│  │ here      │  │                      │  │                 │  │
+│  └───────────┘  └──────────────────────┘  └─────────────────┘  │
+│       ↑                                             ↑            │
+│       │                                             │            │
+│    LEFT SIDE                                   RIGHT SIDE        │
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════
+SCREEN 2: Project Navigator (Left Sidebar)
+═══════════════════════════════════════════════════════════════════
+
+┌──────────────────────────┐
+│ ◀ No Filter              │  ← Search box at bottom
+├──────────────────────────┤
+│ 📁 RaceTrian            │
+│   📄 RaceTrianApp.swift │
+│   📄 ContentView.swift  │
+│   📄 Theme.swift        │  ← KEEP this one (don't uncheck)
+│   📄 ProfileView.swift  │
+│   📄 ThemeAndHelpers... │  ← CLICK THIS to exclude
+│   📄 ThemeFix.swift     │  ← Then this
+│   📄 UIPlaceholders...  │  ← Then this
+│   ...                   │
+└──────────────────────────┘
+     ↑
+     1. Click a file here
+     2. Then look at RIGHT sidebar
+
+═══════════════════════════════════════════════════════════════════
+SCREEN 3: File Inspector (Right Sidebar) - NOT VISIBLE?
+═══════════════════════════════════════════════════════════════════
+
+If you DON'T see the right sidebar:
+
+TOP-RIGHT CORNER OF XCODE:
+┌────────────────────────────────────┐
+│  [□] [□] [≡]  ← Click THIS button  │
+│               to show right panel  │
+└────────────────────────────────────┘
+
+Or: View → Inspectors → Show File Inspector
+
+═══════════════════════════════════════════════════════════════════
+SCREEN 4: File Inspector Tabs (Top of Right Sidebar)
+═══════════════════════════════════════════════════════════════════
+
+At the top of the right sidebar, you see icons:
+
+┌────────────────────────┐
+│  [📁] [📄] [➤] [?]    │  ← Click 📁 (File Inspector)
+└────────────────────────┘
+      ↑
+   Click the FOLDER icon (first one)
+
+═══════════════════════════════════════════════════════════════════
+SCREEN 5: File Inspector Panel (What You Should See)
+═══════════════════════════════════════════════════════════════════
+
+Right sidebar should look like this:
+
+┌─────────────────────────────────┐
+│ 📁 File Inspector               │  ← Tab name at top
+├─────────────────────────────────┤
+│                                 │
+│ Identity and Type               │
+│ ─────────────────               │
+│ Name: ThemeAndHelpers.swift     │
+│ Type: Swift Source              │
+│ Location: RaceTrian             │
+│                                 │
+│ Text Settings                   │
+│ ─────────────────               │
+│ Text Encoding: UTF-8            │
+│ Indent Using: Spaces            │
+│                                 │
+│ ⬇ SCROLL DOWN ⬇                │
+│                                 │
+│ Target Membership               │  ← FIND THIS!
+│ ─────────────────               │
+│ ☑ RaceTrian                    │  ← UNCHECK THIS BOX
+│ ☐ RaceTrianTests               │
+│ ☐ RaceTrianUITests             │
+│                                 │
+└─────────────────────────────────┘
+                ↑
+           CLICK THIS CHECKBOX
+         to change ☑ to ☐
+
+═══════════════════════════════════════════════════════════════════
+SCREEN 6: Before vs After
+═══════════════════════════════════════════════════════════════════
+
+BEFORE (File IS compiled - causes errors):
+┌─────────────────────────────────┐
+│ Target Membership               │
+│ ☑ RaceTrian        ← CHECKED   │
+│ ☐ RaceTrianTests               │
+└─────────────────────────────────┘
+
+AFTER (File NOT compiled - fixed!):
+┌─────────────────────────────────┐
+│ Target Membership               │
+│ ☐ RaceTrian        ← UNCHECKED │
+│ ☐ RaceTrianTests               │
+└─────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════
+COMPLETE WORKFLOW (Visual)
+═══════════════════════════════════════════════════════════════════
+
+Step 1: Click file in left sidebar
+        ↓
+┌──────────────┐
+│ 📄 ThemeFix  │ ← Click this
+└──────────────┘
+
+Step 2: Look at right sidebar, find Target Membership
+        ↓
+┌──────────────────┐
+│Target Membership │
+│ ☑ RaceTrian     │
+└──────────────────┘
+
+Step 3: Click the checkbox to uncheck
+        ↓
+┌──────────────────┐
+│Target Membership │
+│ ☐ RaceTrian     │ ← Now unchecked ✅
+└──────────────────┘
+
+Step 4: Repeat for next file
+        ↓
+┌──────────────────────┐
+│ 📄 UIPlaceholders   │ ← Click next file
+└──────────────────────┘
+
+... repeat until all 12 files are unchecked
+
+═══════════════════════════════════════════════════════════════════
+KEYBOARD SHORTCUTS
+═══════════════════════════════════════════════════════════════════
+
+⌘1            - Show Project Navigator (left sidebar)
+⌥⌘1           - Show File Inspector (right sidebar)
+⌘0            - Toggle left sidebar
+⌥⌘0           - Toggle right sidebar
+⌘⇧K           - Clean Build Folder
+⌘B            - Build
+
+═══════════════════════════════════════════════════════════════════
+WHAT IF I DON'T SEE "TARGET MEMBERSHIP"?
+═══════════════════════════════════════════════════════════════════
+
+1. Make sure you clicked a Swift file (not a folder)
+2. Make sure File Inspector (📁 icon) is selected at top
+3. Scroll down in the right sidebar
+4. It should be below "Text Settings" section
+
+═══════════════════════════════════════════════════════════════════
+CHECKLIST FOR ONE FILE
+═══════════════════════════════════════════════════════════════════
+
+For "ThemeFix.swift":
+
+□ 1. Found file in Project Navigator (left)
+□ 2. Clicked on filename (turns blue)
+□ 3. Right sidebar is visible
+□ 4. File Inspector (📁) is selected
+□ 5. Scrolled down to "Target Membership"
+□ 6. Found "RaceTrian" checkbox
+□ 7. Clicked to UNCHECK it (☑ → ☐)
+□ 8. Verified it's now unchecked (☐)
+
+Now repeat for the other 11 files!
+
+═══════════════════════════════════════════════════════════════════

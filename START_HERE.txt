@@ -1,0 +1,81 @@
+╔══════════════════════════════════════════════════════════════╗
+║              ✅ 2-MINUTE FIX CHECKLIST                       ║
+╚══════════════════════════════════════════════════════════════╝
+
+STEP 1: Exclude Duplicate Files
+────────────────────────────────────────────────────────────────
+
+For each file below:
+1. Click file in Project Navigator
+2. Open File Inspector (right sidebar, 📁 icon)
+3. Under "Target Membership", UNCHECK "RaceTrian"
+
+Files to UNCHECK:
+─────────────────
+□ ThemeAndHelpers.swift
+□ ThemeFix.swift
+□ ThemeAndMissingTypes.swift
+□ CompleteThemeAndViews.swift
+□ UIPlaceholders 3.swift
+□ COPY_THIS_TO_XCODE.swift
+□ MissingViews.swift
+□ MissingViewStubs.swift
+□ MissingImplementations.swift
+
+STEP 2: Verify Theme.swift is Included
+────────────────────────────────────────────────────────────────
+
+□ Theme.swift is CHECKED in Target Membership
+
+STEP 3: Clean & Build
+────────────────────────────────────────────────────────────────
+
+□ Press ⌘+Shift+K (Clean Build Folder)
+□ Press ⌘+B (Build)
+
+STEP 4: Verify Success
+────────────────────────────────────────────────────────────────
+
+□ Build shows "Build Succeeded"
+□ 0 errors displayed
+
+╔══════════════════════════════════════════════════════════════╗
+║                   ⚠️ COMMON MISTAKES                         ║
+╚══════════════════════════════════════════════════════════════╝
+
+❌ DON'T delete the files (just uncheck from target)
+❌ DON'T uncheck Theme.swift (keep it checked!)
+❌ DON'T skip the Clean step
+
+╔══════════════════════════════════════════════════════════════╗
+║                  🎯 QUICK VISUAL GUIDE                       ║
+╚══════════════════════════════════════════════════════════════╝
+
+File Inspector looks like this:
+┌───────────────────────────┐
+│ Target Membership         │
+│ ☐ RaceTrian     ← Uncheck│
+│ ☐ RaceTrianTests          │
+└───────────────────────────┘
+
+When a file is UNCHECKED, it stays in your project but
+won't be compiled (preventing duplicate definition errors).
+
+╔══════════════════════════════════════════════════════════════╗
+║                    📍 NEED HELP FINDING?                     ║
+╚══════════════════════════════════════════════════════════════╝
+
+Project Navigator:     Left sidebar in Xcode
+File Inspector:        Right sidebar, 📁 folder icon at top
+Target Membership:     Section in File Inspector
+
+If you don't see File Inspector:
+- Click the sidebar icon (top-right of Xcode)
+- Or: View → Inspectors → Show File Inspector
+
+╔══════════════════════════════════════════════════════════════╗
+║                         DONE! ✅                             ║
+╚══════════════════════════════════════════════════════════════╝
+
+After completing all checkboxes, your app should build with
+0 errors and run successfully!
