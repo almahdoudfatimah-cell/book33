@@ -1,0 +1,139 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "B7B395E5",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6790601921",
+    "_askToBuyEnabled" : false,
+    "_billingGracePeriodEnabled" : false,
+    "_billingIssuesEnabled" : false,
+    "_developerTeamID" : "38TW2AKHTL",
+    "_disableDialogs" : false,
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 812713120.90654898,
+    "_locale" : "en_US",
+    "_renewalBillingIssuesEnabled" : false,
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+
+    ],
+    "_timeRate" : 0
+  },
+  "subscriptionBundleGroups" : [
+
+  ],
+  "subscriptionGroups" : [
+    {
+      "id" : "22263825",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "Premium Access",
+          "locale" : "en_US"
+        }
+      ],
+      "name" : "Premium Access",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "billingPlans" : [
+            {
+              "billingPlanType" : "BILLED_UPFRONT",
+              "commitmentDisplayPrice" : "18.0",
+              "displayPrice" : "18.0",
+              "internalID" : "6797187336_BILLED_UPFRONT",
+              "isEnabled" : true
+            }
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "18.0",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "6797187336",
+          "introductoryOffers" : [
+
+          ],
+          "localizations" : [
+            {
+              "description" : "Perminium Weekly",
+              "displayName" : "Perminium Weekly",
+              "locale" : "en_GB"
+            }
+          ],
+          "productID" : "Perminium_Weekly",
+          "recurringSubscriptionPeriod" : "P1W",
+          "referenceName" : "Perminium Weekly",
+          "subscriptionGroupID" : "22263825",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "billingPlans" : [
+            {
+              "billingPlanType" : "BILLED_UPFRONT",
+              "commitmentDisplayPrice" : "117.99",
+              "displayPrice" : "117.99",
+              "internalID" : "6797187612_BILLED_UPFRONT",
+              "isEnabled" : true
+            }
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "117.99",
+          "familyShareable" : false,
+          "groupNumber" : 3,
+          "internalID" : "6797187612",
+          "introductoryOffers" : [
+
+          ],
+          "localizations" : [
+            {
+              "description" : "Perminium Yearly",
+              "displayName" : "Perminium Yearly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "Perminium_Yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Perminium Yearly",
+          "subscriptionGroupID" : "22263825",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        }
+      ]
+    }
+  ],
+  "subscriptionSuiteGroups" : [
+
+  ],
+  "version" : {
+    "major" : 6,
+    "minor" : 3
+  }
+}
